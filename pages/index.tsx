@@ -1,26 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import Head from '../components/head'
-import Nav from '../components/nav'
+import { ThemeProvider } from '@chakra-ui/core'
+import React from 'react'
+import Content from '../components/content'
 
-const Home = () => {
-  const [date, setDate] = useState(null)
-
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date')
-      const newDate = await res.json()
-      setDate(newDate)
-    }
-    getDate()
-  }, [])
-
+const App = () => {
   return (
-    <div>
-      <Head title="Home" />
-      <Nav />
-    </div>
+    <ThemeProvider>
+      <Content />
+    </ThemeProvider>
   )
 }
 
-export default Home
+export default App
