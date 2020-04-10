@@ -23,7 +23,7 @@ const Content = () => {
           <Link href="https://www.facebook.com/ryo.kato.75" mx="0.5rem" isExternal>
             <FaFacebook size="3rem" />
           </Link>
-          <Link href="https://katryo.hatenablog.com/" mx="0.5rem" isExternal>
+          <Link href="https://katryo.hatenablog.com/" ml="0.5rem" isExternal>
             <FiPenTool size="3rem" />
           </Link>
         </Flex>
